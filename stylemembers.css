@@ -1,0 +1,64 @@
+
+body {
+    background-color: burlywood;
+}
+
+.menu {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+    .menu .text {
+        font-family: 'Engravers MT';
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+.text a {
+    text-decoration: none;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+
+.header{
+    height:10%;
+    width:95vw;
+    background-color:darksalmon;
+    margin:0 auto;
+    padding-left:20px;
+}
+.header h1{
+    text-align:center;
+    font-family:Algerian;
+}
+
+.contents {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+}
+.contents .developers{
+    border:dashed;
+    width:30%;
+    justify-content:space-between;
+}
+
+.developers img{
+    width:80%;
+    margin-left:8%;
+}
+
+input[type='submit']{
+    width:100%;
+    height:5%;
+    background-color:goldenrod;
+}
+
+input[type='submit']:hover{
+    background-color:red;
+}

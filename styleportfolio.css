@@ -1,29 +1,122 @@
-.contents { /*alligning contents*/
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 100%;
-    padding: 10px;
+
+@media print {
+    body *{
+        visibility:hidden;
+    }
+    
+    .print, .print *{
+       visibility:visible;
+    }
+    .print{
+        position:absolute;
+        left:0px;
+        right:0px;
+    }
+}
+body{
+    background-color:burlywood;
 }
 
-
-    .contents div:hover { /*making changes when hovering through the the contents*/
-        background-size: 200%;
-        background-position: center;
-        border-bottom: 6px solid green;
-    }
-/*refered from w3school*/
-.lab { /*editting containers*/
-    /*float: left; /*using float layout*/
-    margin-top: 1%;
-    margin-left: 3%;
-    text-align: center;
-    width: 400px;
-    height: 300px;
-    background-color: gainsboro;
+.menu{
+    width:100%;
+    background-color:antiquewhite;
 }
 
-    .lab img { /*editting images*/
-        margin-bottom: 10%;
-        width: 100%;
-        height: 60%;
-    }
+.menu .text {
+        font-family:'Engravers MT';
+        font-size:20px;
+        letter-spacing:2px;
+}
+
+.text a {
+    text-decoration: none;
+    padding-right:90px;
+    padding-left:90px;
+}
+
+.menu a:hover{
+    color:red;
+}
+.header{
+    height:5%;
+    width:95vw;
+    background-color:darksalmon;
+    margin:0 auto;
+    padding-left:20px;
+}
+.header h1{
+    font-family:Algerian;
+}
+.header p{
+    padding-left:30px;
+}
+
+.skill{
+    grid-area:a;
+    height:200px;
+}
+.qual {
+    grid-area: b;
+    height: 200px;
+
+}
+.exp {
+    grid-area: c;
+    height: 200px;
+}
+.container {
+    grid-area: d;
+}
+li{
+    list-style:none;
+}
+.p{
+    border:none;
+    display:grid;
+    grid-template-areas:
+        'a a b b c c';
+       
+    grid-gap:50px;
+    max-width:1220px;
+    margin:auto;
+}
+.lab1{
+    grid-area:e;
+}
+.lab2 {
+    grid-area: f;
+}
+.lab3 {
+    grid-area: g;
+}
+.lab4 {
+    grid-area: h;
+}
+.lab5 {
+    grid-area: i;
+}
+.lab6 {
+    grid-area: j;
+}
+.container {
+    border: none;
+    display: grid;
+    grid-template-areas: 'e e e f f f' 'g g g h h h' 'i i i j j j';
+    grid-gap: 50px;
+    max-width: 1220px;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+img{
+    padding-left:3em;
+    width:80%;
+    height:50%;
+}
+div{
+    border:dashed;
+}
+
+.p1{
+    font-size:12px;
+}
