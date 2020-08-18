@@ -2,52 +2,87 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css"><!--link towards style sheet-->
 </head>
 <body>
     <form action="members.html">
-        <svg height="100%" width="100%">
-            <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:yellow;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:forestgreen;stop-opacity:1" />
-                </linearGradient>
-            </defs>
-            <defs>
-                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" style="stop-color:red;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:gray;stop-opacity:1" />
-                </linearGradient>
-            </defs>
-            <circle cx="50%" cy="40%" r="5%" stroke="green" stroke-width="4" fill="url(#grad1)" />
-            <text fill="url(#grad2)" font-size="20" font-family="Verdana" x="48%" y="44%">Name</text>
-            Sorry, your browser does not support inline SVG.
-        </svg>
-        <div>
-            <h1>Our Company's Vision</h1>
-            <pre>we are here to make every dream possible of our customers 
-        For us Customer satisfaction is the first priority</pre>
+        <div class="menu">
+            <svg height="50%" width="50%" style="margin-left:3%;"><!--Creating logo-->
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:ThreeDLightShadow;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:ThreeDDarkShadow;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <polygon class="logo" points="50,10 0,50 50,35 100,50"
+                         style="fill:url(#grad1);stroke:silver;stroke-width:3;">
+                </polygon>
+                <text fill="url(#grad2)" font-size="12" font-family="arial black" x="4.3%" y="63%">A4art</text>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+            <div class="text"><!-- menue item-->
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Hobbies</a>
+                <a href="members.html">Contact us</a>
+            </div>
+                <div class="header">
+                    <p id="headerp1">
+                        <b>A company that stands out</b>
+                    </p>
+                </div>
+        </div>
+        
+        <div class="contents">
+            <div class="text">
+                <h1><u>Our Company's Mission</u></h1><hr />
+                <p>The A4art company energizes the satisfaction,understanding, and advancement of the performing expressions in Confederation ThunderBay through diverse and engaging in creative experiences</p>
+            </div>
+            <div class="text">
+                <h1><u>Our visions</u></h1><hr />
+                <p>The A4art company is committed to making a positive affect and giving a world class involvement.We accept within the tranformative control of the performing expressions to bind together, fortify and rouse our community</p>
+            </div>
+            <div class="text">
+                <h1><u>Our values</u></h1><hr />
+                <ul>
+                    <li>We accept that craftsmanship lights interest, fills creative energy and welcomes revelation of modern and distinctive encounters, differing societies, and creative genres.</li>
+                    <li>We honor and celebrate aestheticness. From world-renowned entertainers to those fair starting their imaginative exploration—we all yearn to enormity in ourselves and in our work.</li>
+                </ul>
+            </div>
 
         </div>
-        <div>
-            <h1>Our Services</h1>
-            <ul>
-                <li>Creating new website from scratch</li>
-                <li>Modifying existing website</li>
-            </ul>
-        </div>
-        <div>
-            <h1>Team members</h1>
-            <div class="Members">
-                <input type="submit" name="Members" id="Members" value="Our members"><!--link towards Members page-->
+        <div class="contents">
+            <div class="text">
+                <h1><u>Our services</u></h1><hr />
+                <ul>
+                    <h2>Digital placement</h2>
+                    <li>Your clients receive the benefit of visualizing proposals digitally placed in photographs or elevations prior to making a final selection.</li>
+                    <h2>Delivery and Installation</h2>
+                    <li>The A4art uses its network of art handlers to coordinate and supervise the safe handling, delivery and installation for your project</li>
+                    <h2>Framing</h2>
+                    <li>We provide custom archival framing and can make recommendations and create quotes upon request.</li>
+                    <h2>Rentals</h2>
+                    <li>Artwork rentals are available at a rate of 20% of the listed price, per month. Clients are welcome to apply one month of rental fees to the purchase of the same piece, and installment plans are available. Preferred rates for long term rentals, and gallery members are available, and quoted upon request.</li>
+                </ul>
             </div>
         </div>
-        <style>
-            div {
-                border-style: groove;
-            }
-        </style>
+        <div class="contents">
+            <div class="text">
+                <h1><u>Team members</u></h1>
+            </div>
+        </div>
+        <div class="Members">
+            <input type="submit" name="Members" id="Members" value="Our members"><!--link towards Members page-->
+        </div>
     </form>
 </body>
 </html>

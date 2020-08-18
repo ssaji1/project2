@@ -1,64 +1,117 @@
 
 body {
-    background-color: burlywood;
+    background-color: wheat;
 }
 
 .menu {
+    margin-top: -0.5%;
     width: 100%;
-    background-color: antiquewhite;
+    height: 130px;
+    background-color: black;
 }
 
-    .menu .text {
-        font-family: 'Engravers MT';
-        font-size: 20px;
+.menu .text {
+        padding-left: 60%;
         letter-spacing: 2px;
-    }
+}
 
 .text a {
+    font-family: Arial;
+    font-size: 20px;
     text-decoration: none;
-    padding-right: 90px;
-    padding-left: 90px;
+    color: antiquewhite;
+    padding-right: 0px;
+    padding-left: 85px;
 }
 
 .menu a:hover {
-    color: red;
+    color: salmon;
 }
 
 
-.header{
-    height:10%;
-    width:95vw;
-    background-color:darksalmon;
-    margin:0 auto;
-    padding-left:20px;
+.header1 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: -2%;
+    height:10px;
+}
+
+#headerp1 {
+    font-family: 'Brush Script MT';
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    margin-top:-1%;
+    color: white;
+}
+#headerp1:hover {
+    color: yellow;
+}
+
+.header {
+    padding-top: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: salmon;
+    text-align: center;
 }
 .header h1{
-    text-align:center;
-    font-family:Algerian;
+     font-family:Arial;
+    letter-spacing:2px;
 }
 
+
+.header p{
+    font-family:'Brush Script MT';
+    font-weight:600;
+    font-size:18px;
+    letter-spacing:1px;
+    padding-left:30px;
+}
+#headerp{
+    font-size:30px;
+}
 .contents {
-    border: solid;
     display: flex;
+    text-align:center;
     justify-content: space-between;
 }
 .contents .developers{
-    border:dashed;
+    background-color:black;
+    border-right: 1px solid salmon;
+    border-bottom: 1px solid salmon;
     width:30%;
+    color:white;
     justify-content:space-between;
 }
-
+.link{
+    color:white;
+    text-decoration:none;
+}
+.link:hover{
+    color:salmon;
+}
 .developers img{
+    padding-top:10px;
     width:80%;
     margin-left:8%;
 }
 
-input[type='submit']{
-    width:100%;
-    height:5%;
-    background-color:goldenrod;
+input[type='submit'] {
+    height: 50px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    margin-left: 35%;
+    width: 30vw;
+    font-size: 20px;
+    border-width:3px;
+    border-color:silver;
 }
 
 input[type='submit']:hover{
-    background-color:red;
+    background-color:salmon;
+    color: black;
 }

@@ -1,58 +1,54 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Hobbies</title>
-    <link rel="stylesheet" type="text/css" href="style.css"><!--link towards style sheet-->
+    <script src="gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylegallery.css"><!--link towards style sheet-->
 </head>
-<body>
+<body onload="imageload()">
+    <div class="menu">
+        <svg height="50%" width="50%" style="margin-left:3%;">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:ThreeDLightShadow;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:ThreeDDarkShadow;stop-opacity:1" />
+                </linearGradient>
+            </defs>
 
-    <h1>Our Hobbies</h1>
-    <ol><h2><u>Cricket</u></h2></ol>
-    <div class="text">
-        description of cricket
+            <polygon class="logo" points="50,10 0,50 50,35 100,50"
+                     style="fill:url(#grad1);stroke:silver;stroke-width:3;">
+            </polygon>
+            <text fill="url(#grad2)" font-size="12" font-family="arial black" x="4.3%" y="63%">A4art</text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <div class="text">
+            <a href="index.html">Home</a>
+            <a href="members.html">Contact Us</a>
+        </div>
+        <div class="header">
+            <p id="headerp1">
+                <b>A company that stands out</b>
+            </p>
+        </div>
     </div>
-    <div class="Cricket">
-        <h2 class="disc">checking</h2>
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
+    <div class="head">
+        <h1>ARTS</h1>
+        <div class="text">
+            <ol><h2><u>ART BY COLLEGUES</u></h2></ol>
+            These are some of the art done by our collegues
+        </div>
     </div>
-    <div class="painting">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
+    <br>
+    <div id='listing' class='image-container'>
     </div>
-    <div class="football">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
-        <img src="Members_Images/saneesh.jpg">
 
 </body>
-
 </html>
