@@ -14,6 +14,7 @@ ul{
 .menu .text {
         padding-left: 60%;
         letter-spacing: 2px;
+        margin-left:4px;
     }
 
 .text a {
@@ -21,8 +22,8 @@ ul{
     font-size: 20px;
     text-decoration: none;
     color: antiquewhite;
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 0px;
+    padding-left: 85px;
 }
 
 .menu a:hover {

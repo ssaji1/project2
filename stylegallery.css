@@ -17,6 +17,7 @@ body {
     .menu .text {
         padding-left: 60%;
         letter-spacing: 2px;
+        margin-left:4px;
     }
 
 .text a {
@@ -161,7 +162,7 @@ i.last {
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .3s ease;
+    transition: .0s ease;
 }
 
 .container:hover .overlay {
